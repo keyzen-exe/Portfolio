@@ -1,16 +1,27 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    color: white;
+}
+
+
+body {
+    background-image: url('assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a {
     text-decoration: none;
-    color:black
+    color: rgb(255, 255, 255)
 }
 
-a:hover{
-    color: rgb(0, 179, 255);
+a:hover {
+    color: rgb(0, 174, 255);
 }
 
 header {
@@ -18,7 +29,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 200px;
-    border-bottom: solid 1px black;
 }
 
 nav {
@@ -33,27 +43,123 @@ ul {
     font-size: 20px;
 }
 
-
-
 .logo {
     width: 200px;
-    filter: invert();
+}
+
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
 }
 
 
-body{
-    background: #020024;
-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+/* Style pour les boutons personnalisés */
+.btn {
+    display: block;
+    /* Affichage en bloc (prend toute la largeur disponible) */
+    width: fit-content;
+    /* S'adapte au contenu (largeur minimale nécessaire) */
+    background-color: #444444;
+    color: white;
+    padding: 10px 32px;
+    border-radius: 25px;
+    text-decoration: none;
 }
 
-img{
-    width: 60%;
+/* Conteneur principal du slider de projets */
+.sliderProjets-container {
+    display: flex;
+    /* Affichage en flexbox horizontal */
+    gap: 20px;
+    /* Espace entre les éléments enfants */
+    overflow-x: scroll;
+    /* Permet le défilement horizontal */
+    scroll-snap-type: x mandatory;
+    /* Défilement fluide avec arrêt sur chaque élément */
 }
 
-.flex{
+/* Sous-conteneur des projets dans le slider */
+.slider-projets {
+    display: flex;
+    /* Affichage en flexbox horizontal */
+    gap: 20px;
+    /* Espace entre les projets */
+    width: 0px;
+    /* Largeur fixe */
+    flex-shrink: 0;
+    /* Empêche le rétrécissement de l'élément dans sa largeur. en gros on autorise les enfants a déborder */
+    cursor: pointer;
+    /* Change le curseur au survol */
+}
+
+/* Style individuel pour chaque projet */
+.projet-item {
+    width: 800px;
+    /* Largeur fixe */
+    flex-shrink: 0;
+    /* Empêche le rétrécissement de l'élément */
+    cursor: pointer;
+    /* Change le curseur au survol */
+    background-color: #f7f7f700;
+    padding: 0px;
+}
+
+/* Style des images dans chaque projet */
+.projet-item img {
+    width: 100%;
+    display: block;
+    /* Supprime les espaces blancs en bas de l'image */
+}
+
+
+p {
+    font-family: "Cambay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bkred {
+    background-color: rgb(255, 0, 0);
+}
+
+.w30 {
+    width: 30%;
+}
+
+.pad5 {
+    margin-bottom: 5px;
+}
+
+.souslogo {
+    font-family: "Cambay", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 15%;
+}
+
+.flex {
     display: flex;
 }
 
-.center{
-    justify-content: center;
+.cambay-regular {
+    font-family: "Cambay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.test {
+    align-items: flex-start;
+}
+
+.marginleft {
+    margin-left: 700px;
+}
+
+.marginprojets {
+    margin-left: 700px;
+}
+
+.marginslider {
+    margin-left: 175px;
 }
