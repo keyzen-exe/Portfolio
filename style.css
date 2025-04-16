@@ -9,10 +9,8 @@
 
 
 body {
-    background-image: url('assets/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
 a {
@@ -47,12 +45,6 @@ ul {
     width: 200px;
 }
 
-/* Style général pour le corps de la page */
-body {
-    font-family: Arial, sans-serif;
-}
-
-
 /* Style pour les boutons personnalisés */
 .btn {
     display: block;
@@ -72,10 +64,11 @@ body {
     /* Affichage en flexbox horizontal */
     gap: 20px;
     /* Espace entre les éléments enfants */
-    overflow-x: scroll;
+    overflow-x: hidden;
     /* Permet le défilement horizontal */
     scroll-snap-type: x mandatory;
     /* Défilement fluide avec arrêt sur chaque élément */
+    height: 350px;
 }
 
 /* Sous-conteneur des projets dans le slider */
@@ -94,13 +87,14 @@ body {
 
 /* Style individuel pour chaque projet */
 .projet-item {
-    width: 800px;
+    width: 350px;
+    height: 350px;
     /* Largeur fixe */
     flex-shrink: 0;
     /* Empêche le rétrécissement de l'élément */
     cursor: pointer;
     /* Change le curseur au survol */
-    background-color: #f7f7f700;
+  /* background-color: #f7f7f700;*/
     padding: 0px;
 }
 
@@ -108,6 +102,8 @@ body {
 .projet-item img {
     width: 100%;
     display: block;
+    height: 100%;
+    object-fit: cover;
     /* Supprime les espaces blancs en bas de l'image */
 }
 
@@ -118,14 +114,37 @@ p {
     font-style: normal;
 }
 
-.bkred {
+.bgred {
     background-color: rgb(255, 0, 0);
 }
+
+.bgblue {
+    background-color: rgb(0, 26, 255);
+}
+
+
 
 .w30 {
     width: 30%;
 }
 
+.w15{
+    width: 15%;
+}
+.w20 {
+    width: 20%;
+}
+.w80 {
+    width: 80%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.marginB{
+    margin-bottom: 20px;
+}
 .pad5 {
     margin-bottom: 5px;
 }
@@ -142,24 +161,40 @@ p {
     display: flex;
 }
 
+.spaceBtw {
+    justify-content: space-between;
+}
+
 .cambay-regular {
     font-family: "Cambay", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.test {
-    align-items: flex-start;
-}
-
 .marginleft {
-    margin-left: 700px;
-}
-
-.marginprojets {
     margin-left: 700px;
 }
 
 .marginslider {
     margin-left: 175px;
 }
+
+.sticky{
+    position: sticky;
+    top: 150px;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.contenuprincipale {
+    margin-top: 150px;
+}
+
