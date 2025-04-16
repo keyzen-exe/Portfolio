@@ -9,8 +9,7 @@
 
 
 body {
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    background: linear-gradient(to right,#28dbcb,#3e8cec);
 }
 
 a {
@@ -19,18 +18,19 @@ a {
 }
 
 a:hover {
-    color: rgb(0, 174, 255);
+    color: rgb(0, 110, 255);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 200px;
+    padding: 30px;
+    background: linear-gradient(to right,#1fb2a6,#367fd9);
 }
 
 nav {
-    width: 50%;
+    width: 40%;
 }
 
 ul {
@@ -70,6 +70,7 @@ ul {
     /* Défilement fluide avec arrêt sur chaque élément */
     height: 350px;
 }
+
 
 /* Sous-conteneur des projets dans le slider */
 .slider-projets {
@@ -176,7 +177,7 @@ p {
 }
 
 .marginslider {
-    margin-left: 175px;
+    width: 90%;
 }
 
 .sticky{
@@ -198,3 +199,25 @@ p {
     margin-top: 150px;
 }
 
+.pad{
+    padding: 30px;
+}
+
+.margin300{
+    margin-top: 200px;
+}
+
+.marginright{
+    margin-right: 50px;
+}
+
+.boitecom{
+    background-color: rgba(155, 155, 155, 0.46);
+    border-radius: 10px;
+}
+
+.fleximg{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
