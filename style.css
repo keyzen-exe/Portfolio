@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 
 body {
-    background: linear-gradient(to right,#28dbcb,#3e8cec);
+    background: linear-gradient(to right, #28dbcb, #3e8cec);
 }
 
 a {
@@ -17,16 +17,41 @@ a {
     color: rgb(255, 255, 255)
 }
 
+a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Soulignement animé */
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #00fff7;
+    transition: width 0.3s ease;
+}
+
 a:hover {
-    color: rgb(0, 110, 255);
+    transform: scale(1.1);
+    color: #00fff7;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    background: linear-gradient(to right,#1fb2a6,#367fd9);
+    padding: 20px;
+    background: linear-gradient(to right, #1fb2a6, #367fd9);
 }
 
 nav {
@@ -95,7 +120,7 @@ ul {
     /* Empêche le rétrécissement de l'élément */
     cursor: pointer;
     /* Change le curseur au survol */
-  /* background-color: #f7f7f700;*/
+    /* background-color: #f7f7f700;*/
     padding: 0px;
 }
 
@@ -110,10 +135,22 @@ ul {
 
 
 p {
-    font-family: "Cambay", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+h1,
+h2,
+h3,
+a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.15em;
+}
+
 
 .bgred {
     background-color: rgb(255, 0, 0);
@@ -124,17 +161,19 @@ p {
 }
 
 
+/*largeur*/
+.w15 {
+    width: 15%;
+}
+
+.w20 {
+    width: 20%;
+}
 
 .w30 {
     width: 30%;
 }
 
-.w15{
-    width: 15%;
-}
-.w20 {
-    width: 20%;
-}
 .w80 {
     width: 80%;
 }
@@ -143,15 +182,21 @@ p {
     width: 100%;
 }
 
-.marginB{
+.marginB {
     margin-bottom: 20px;
 }
+
+.margintop {
+    margin-top: 30px;
+}
+
+
 .pad5 {
     margin-bottom: 5px;
 }
 
 .souslogo {
-    font-family: "Cambay", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -166,12 +211,6 @@ p {
     justify-content: space-between;
 }
 
-.cambay-regular {
-    font-family: "Cambay", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .marginleft {
     margin-left: 700px;
 }
@@ -180,7 +219,7 @@ p {
     width: 90%;
 }
 
-.sticky{
+.sticky {
     position: sticky;
     top: 150px;
 }
@@ -199,25 +238,42 @@ p {
     margin-top: 150px;
 }
 
-.pad{
+.pad {
     padding: 30px;
 }
 
-.margin300{
+.margin300 {
     margin-top: 200px;
 }
 
-.marginright{
+.marginright {
     margin-right: 50px;
 }
 
-.boitecom{
+.boitecom {
     background-color: rgba(155, 155, 155, 0.46);
     border-radius: 10px;
 }
 
-.fleximg{
+.fleximg {
     justify-content: center;
     display: flex;
     width: 100%;
 }
+
+
+footer {
+    background: linear-gradient(to right, #1fb2a6, #367fd9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
