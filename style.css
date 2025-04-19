@@ -7,27 +7,34 @@
     color: white;
 }
 
-
 body {
-    background: linear-gradient(to right, #28dbcb, #3e8cec);
+    background-image: url(assets/Background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255)
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1fb2a6, #367fd9);
+}
+
+.logo {
+    width: 200px;
 }
 
 a {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: white;
     transition: transform 0.3s ease, color 0.3s ease;
+    color: rgb(255, 255, 255)
 }
 
-/* Soulignement animé */
 a::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -46,14 +53,6 @@ a:hover::after {
     width: 100%;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(to right, #1fb2a6, #367fd9);
-}
-
 nav {
     width: 40%;
 }
@@ -64,10 +63,6 @@ ul {
     align-items: center;
     list-style: none;
     font-size: 20px;
-}
-
-.logo {
-    width: 200px;
 }
 
 /* Style pour les boutons personnalisés */
@@ -133,33 +128,34 @@ ul {
     object-fit: cover;
 }
 
-
 p {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* police */
 h1,
 h2,
 h3,
 a {
     font-family: "Oswald", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0.15em;
+    font-size: 1.3rem;
 }
 
-
+/* test bg */
 .bgred {
     background-color: rgb(255, 0, 0);
 }
 
+/* test bg */
 .bgblue {
     background-color: rgb(0, 26, 255);
 }
-
 
 /*largeur*/
 .w15 {
@@ -190,11 +186,27 @@ a {
     margin-top: 30px;
 }
 
+.marginleft {
+    margin-left: 700px;
+}
+
+.marginslider {
+    width: 90%;
+}
+
+.margin300 {
+    margin-top: 200px;
+}
+
+.marginright {
+    margin-right: 50px;
+}
 
 .pad5 {
     margin-bottom: 5px;
 }
 
+/* taile sous logo */
 .souslogo {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
@@ -209,14 +221,6 @@ a {
 
 .spaceBtw {
     justify-content: space-between;
-}
-
-.marginleft {
-    margin-left: 700px;
-}
-
-.marginslider {
-    width: 90%;
 }
 
 .sticky {
@@ -242,25 +246,11 @@ a {
     padding: 30px;
 }
 
-.margin300 {
-    margin-top: 200px;
-}
-
-.marginright {
-    margin-right: 50px;
-}
-
-.boitecom {
-    background-color: rgba(155, 155, 155, 0.46);
-    border-radius: 10px;
-}
-
 .fleximg {
     justify-content: center;
     display: flex;
     width: 100%;
 }
-
 
 footer {
     background: linear-gradient(to right, #1fb2a6, #367fd9);
@@ -273,10 +263,6 @@ footer {
     font-size: 14px;
 }
 
-footer p {
-    margin: 0;
-}
-
 .boiteimg {
     justify-content: center;
     align-items: center;
@@ -287,7 +273,7 @@ footer p {
     flex-wrap: wrap;
 }
 
-.test {
+.taileboite {
     max-width: 100px;
     width: 100%;
     height: auto;
@@ -305,12 +291,11 @@ footer p {
 }
 
 .boitecom {
-    background-color: rgba(155, 155, 155, 0.46);
+    background-color: rgba(8, 216, 192, 0.438);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 10px;
-
 }
