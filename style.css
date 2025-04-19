@@ -122,6 +122,7 @@ ul {
     /* Change le curseur au survol */
     /* background-color: #f7f7f700;*/
     padding: 0px;
+    overflow: hidden;
 }
 
 /* Style des images dans chaque projet */
@@ -130,7 +131,6 @@ ul {
     display: block;
     height: 100%;
     object-fit: cover;
-    /* Supprime les espaces blancs en bas de l'image */
 }
 
 
@@ -301,5 +301,15 @@ footer p {
 }
 
 .projet-item img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.boitecom {
+    background-color: rgba(155, 155, 155, 0.46);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
